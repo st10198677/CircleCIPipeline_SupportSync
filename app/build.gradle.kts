@@ -5,6 +5,17 @@ plugins {
     id("com.android.application")
     id("org.jetbrains.kotlin.android")
     id("com.google.gms.google-services")
+    id("org.sonarqube") version "6.0.0.5145"
+
+}
+
+sonar {
+  properties {
+    property("sonar.projectKey", "st10198677_SupportSync-CircleCIPipeline-")
+    property("sonar.organization", "st10198677")
+    property("sonar.host.url", "https://sonarcloud.io")
+  }
+
 }
 
 android {
